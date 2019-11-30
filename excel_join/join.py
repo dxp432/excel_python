@@ -9,6 +9,7 @@ print(pf.head(10))
 pf_person = pd.DataFrame(pd.read_excel('person.xls', sheet_name='Sheet1'))
 print(pf_person.head(10))
 
+# 链接
 pf_result = pd.merge(pf_person, pf, how='left', on=['name'])
 print(pf_result.head(10))
 
